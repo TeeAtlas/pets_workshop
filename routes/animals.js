@@ -44,7 +44,7 @@ const animalsRouter = express.Router();
 const petEmojis = {
     dogs: '🐶',
     cats: '🐱',
-    rabbits: '🐰',
+    rabbits: '🐰 (uncomment code to see rabbits)',
 };
 
 animalsRouter.get('/:pet_type', (req, res) => {
@@ -60,8 +60,8 @@ animalsRouter.get('/:pet_type', (req, res) => {
         petData.forEach((pet, index) => {
             html += `<div style="margin: 10px; text-align: center;">
                         <a href="${pet.url}" style="text-decoration: none;"><h2>${pet.name}</h2></a><br>
-                        <div style="width: 20em; object-fit: cover; overflow: hidden;">
-                            <img src="${pet.url}" alt="${pet.name}" style="width: 100%; height: 100%;">
+                        <div style="width: 100%; object-fit: cover; overflow: hidden;">
+                            <img src="${pet.url}" alt="${pet.name}">
                         </div><br>
                         Age: ${pet.age}<br>
                         Breed: ${pet.breed}<br>

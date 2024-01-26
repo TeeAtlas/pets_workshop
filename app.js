@@ -18,16 +18,6 @@ app.get('/', (req, res) => {
                 </ul>\
                 <style> ul { list-style-type: none;} </style>') 
 })
-    // app.post('/', (req, res) => {
-    //     res.send('POST request at root')
-    // })
-    //     app.put('/', (req, res) => {
-    //         res.send('PUT request at root')
-    //     })
-    //         app.delete('/', (req, res) => {
-    //             res.send('DELETE request at root')
-    //         })
-
 
 //using template literal to pass variable
 //binds server to port 8000
